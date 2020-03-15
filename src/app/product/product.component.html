@@ -1,0 +1,22 @@
+<p>product works!</p>
+<div class="container">
+
+  <table mdbTable>
+    <thead>
+    <tr style="text-align: left">
+      <th>ID</th>
+      <th>Name</th>
+      <th>Brand</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="mdbTableCol" *ngFor="let prod of products">
+      <td> {{prod.id}}</td>
+      <td> {{prod.name}}</td>
+      <td> {{prod.brand}}</td>
+      <td> {{prod.price}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

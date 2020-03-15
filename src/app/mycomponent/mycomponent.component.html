@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+<div class="container">
+  <h2>MyComponent Html page works</h2>
+
+  <table mdbTable>
+    <thead>
+    <tr>
+      <th class="mdbTableCol" *ngFor="let head of headElements">{{ head }}</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr class="mdbTableCol" *ngFor="let element of elements">
+        <th scope="row"> {{element.id}}</th>
+        <td> {{element.first}}</td>
+        <td> {{element.last}}</td>
+        <td> {{element.handle}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
